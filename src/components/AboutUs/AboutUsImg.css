@@ -1,0 +1,10 @@
+.aboutus-img__position {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.money {
+  height: 50px;
+  width: 50px;
+}

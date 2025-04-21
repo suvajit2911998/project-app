@@ -1,0 +1,42 @@
+.thirdSec {
+  background-color: dodgerblue;
+  background: url("../../assets/hexa.png") no-repeat 100% -7%,
+    url("../../assets/hexa.png") no-repeat 0% 107%,
+    url("../../assets/bgOfWhatWeDo.jpg") no-repeat;
+  background-size: 100px, 100px, cover;
+  position: relative;
+}
+
+.thirdSec-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service {
+  background-color: white;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 60px 0px;
+  transition: all 1s;
+}
+.service:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.service > p {
+  text-align: justify;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.service-button {
+  border-radius: 0 15px;
+  max-width: 180px;
+}

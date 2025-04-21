@@ -1,0 +1,86 @@
+.firstSec-holder {
+  background-color: white;
+  width: 100%;
+  max-width: 234px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstSec-holder > img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.firstSec-holder > h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.firstSec-holder > h3::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 65%;
+  height: 2px;
+  margin: 5px auto 0;
+  border: 2px solid #00e1ff;
+  border-radius: 10px;
+}
+
+.firstSec-holder > p {
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Hover effects */
+.firstSec-holder:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .firstSec-holder {
+    max-width: 60%;
+    margin: 15px auto;
+  }
+
+  .firstSec-holder > h3 {
+    font-size: 1.1rem;
+  }
+
+  .firstSec-holder > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .firstSec-holder {
+    padding: 15px;
+  }
+
+  .firstSec-holder > img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .firstSec-holder > h3 {
+    font-size: 1rem;
+  }
+
+  .firstSec-holder > p {
+    font-size: 0.85rem;
+  }
+}

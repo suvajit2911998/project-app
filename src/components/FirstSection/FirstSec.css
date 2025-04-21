@@ -1,0 +1,21 @@
+.firstSec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  background: url("../../assets/CorporateInterior.jpg") no-repeat center center;
+  background-color: #00eaff;
+  background-blend-mode: darken;
+  background-size: cover;
+  min-height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .firstSec {
+    flex-direction: column;
+    padding: 40px 10px;
+    background-position: center center;
+  }
+}

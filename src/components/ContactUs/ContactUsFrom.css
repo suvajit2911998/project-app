@@ -1,0 +1,52 @@
+.fourthSec form {
+  margin: 1rem;
+}
+
+.fourthSec form input[type="text"],
+.fourthSec form input[type="email"] {
+  display: inline-block;
+  border: none;
+  border-radius: 30px 0px;
+  padding: 30px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  border: 3px solid #00e1ff;
+}
+
+.fourthSec form textarea {
+  display: inline-block;
+  border: none;
+  border-radius: 30px 0px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #000;
+  border: 3px solid #00e1ff;
+  color: #fff;
+}
+
+.fourthSec form input[type="text"]::placeholder,
+.fourthSec form input[type="email"]::placeholder,
+.fourthSec form textarea::placeholder {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.contactus-form__button {
+  display: flex;
+  margin: 0 auto;
+  padding: 15px 20px;
+  width: auto;
+}
+
+.fourthSec form input[type="text"]:focus,
+.fourthSec form input[type="email"]:focus,
+.fourthSec form textarea:focus {
+  outline: none;
+  color: #000;
+  background-color: #00e1ff;
+  border: 3px solid #000;
+}

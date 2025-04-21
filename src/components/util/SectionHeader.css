@@ -1,0 +1,18 @@
+.section-header {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 30%;
+  height: 2px;
+  margin: 5px auto 0;
+  border: 2px solid #00e1ff;
+  border-radius: 10px;
+}

@@ -1,0 +1,103 @@
+.container {
+  position: relative;
+  height: auto;
+  margin: 10px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px #000;
+}
+
+/* needs to change */
+
+.nav {
+  position: sticky;
+  top: 1rem;
+  z-index: 1000;
+  width: 100%;
+  background-color: #001520;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* For menu toggle  */
+.menu-toggle {
+  display: none;
+}
+
+/* for sticky  */
+/* .nav.sticky {
+  background-color: #012538;
+  padding: 10px;
+} */
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 10px 0;
+}
+
+.nav-list li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.nav-list li a:hover {
+  background-color: #00e1ff;
+  color: #000;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    margin: 0 auto;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .nav-list {
+    width: 100%;
+    background-color: #001520;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-list.open {
+    max-height: 500px; /* enough to show all items */
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list li a {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #333;
+  }
+}

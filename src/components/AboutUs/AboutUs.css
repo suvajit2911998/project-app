@@ -1,0 +1,40 @@
+.secondSec {
+  padding: 2rem 1rem;
+}
+
+.secondSec-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.secondSec figure {
+  flex: 1 1 300px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.secondSec figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 768px) {
+  .secondSec-container {
+    flex-direction: column;
+  }
+
+  .secondSec a {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondSec {
+    padding: 1rem 0.5rem;
+  }
+}
