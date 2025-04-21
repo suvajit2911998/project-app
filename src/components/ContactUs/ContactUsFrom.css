@@ -41,6 +41,7 @@
   padding: 15px 20px;
   border-radius: 20px 0;
   width: auto;
+  max-width: none;
 }
 
 .fourthSec form input[type="text"]:focus,
